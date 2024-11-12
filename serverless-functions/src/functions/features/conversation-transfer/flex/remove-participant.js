@@ -54,12 +54,14 @@ exports.handler = prepareFlexFunction(requiredParameters, async (context, event,
 
       if (Object.keys(invites).length < 1) {
         // If the customer is alone, and no invites are pending, close it out.
+        /**
         await twilioExecute(context, (client) =>
           client.flexApi.v1
             .interaction(flexInteractionSid)
             .channels(flexInteractionChannelSid)
             .update({ status: 'closed' }),
         );
+        */
       }
     }
 
