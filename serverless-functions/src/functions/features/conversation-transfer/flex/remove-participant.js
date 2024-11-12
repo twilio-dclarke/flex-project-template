@@ -58,7 +58,7 @@ exports.handler = prepareFlexFunction(requiredParameters, async (context, event,
           client.flexApi.v1
             .interaction(flexInteractionSid)
             .channels(flexInteractionChannelSid)
-            .update({ status: 'wrapup' }),
+            .update({ status: 'closed' }),
         );
       }
     }
