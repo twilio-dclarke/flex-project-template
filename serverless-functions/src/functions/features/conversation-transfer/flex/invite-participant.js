@@ -124,7 +124,7 @@ exports.handler = prepareFlexFunction(requiredParameters, async (context, event,
           .interaction(flexInteractionSid)
           .channels(flexInteractionChannelSid)
           .participants(removeFlexInteractionParticipantSid)
-          .update({ status: 'closed' }),
+          .update({ status: 'wrapup' }),
       );
     } else {
       // Add invite to conversation attributes
