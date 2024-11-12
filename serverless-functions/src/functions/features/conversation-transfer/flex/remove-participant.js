@@ -24,7 +24,7 @@ exports.handler = prepareFlexFunction(requiredParameters, async (context, event,
         .interaction(flexInteractionSid)
         .channels(flexInteractionChannelSid)
         .participants(flexInteractionParticipantSid)
-        .update({ status: 'closed' }),
+        .update({ status: 'wrapup' }),
     );
 
     // After leaving, check how many participants are left in the conversation.
